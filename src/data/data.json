@@ -1,0 +1,21 @@
+{
+  "System": [
+    {
+      "Name": "Grimmaer Niederspannung 3.1",
+      "Abk": "G31",
+      "default": false
+    },
+    {
+      "Name": "Grimmaer Niederspannung 5.1",
+      "Abk": "G51",
+      "default": false
+    }
+  ],
+  "Produktebene": [
+    {
+      "Name": "Typfeld",
+      "Abk": "TF",
+      "default": true
+    }
+  ]
+}
