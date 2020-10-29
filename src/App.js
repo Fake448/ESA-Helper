@@ -1,15 +1,14 @@
 import React from "react";
-import Editor from "./components/editor/editor";
+import Editor from "./components/editor/Editor";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>ESA-Helper</p>
-        <Editor />
-      </header>
-    </div>
-  );
+   console.clear();
+   return (
+      <div className="App">
+         <header className="App-header"></header>
+         <Editor />
+      </div>
+   );
 }
 
 export default App;
