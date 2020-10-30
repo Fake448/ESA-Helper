@@ -7,9 +7,11 @@ import Table from './table/Table'
 class Editor extends React.Component {
    constructor(props) {
       super(props);
-      this.state = {};
+      this.state = {props}
+      const test = "fooooooooooo"
+      
    }
-
+   
    render() {
       return (
          <div className="Editor">
@@ -19,6 +21,10 @@ class Editor extends React.Component {
          </div>
       );
    }
+
+
+
+
 }
 
 
