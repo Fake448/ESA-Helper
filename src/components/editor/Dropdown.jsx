@@ -4,7 +4,6 @@ class Dropdown extends React.Component {
    render() {
       return (
          <React.Fragment>
-            Merkmale:<br />
             <select size="5">
                {this.makeOption("Hallo")}
                {this.makeOption("Hallo2")}

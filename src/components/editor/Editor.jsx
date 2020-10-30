@@ -1,17 +1,25 @@
 import React from "react";
-import Dropdown from "./Dropdown";
+import "./editor.css";
+
+// import Dropdown from "./Dropdown";
+import Table from './table/Table'
 
 class Editor extends React.Component {
-   state = {};
+   constructor(props) {
+      super(props);
+      this.state = {};
+   }
+
    render() {
       return (
-         <div class="editor">
+         <div className="Editor">
             <h1>Editor</h1>
+            <Table data= {this.props.data} />
             <br />
-            <Dropdown />
          </div>
       );
    }
 }
+
 
 export default Editor;
