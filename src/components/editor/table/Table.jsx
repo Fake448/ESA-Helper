@@ -1,45 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 import Cell from "./Cell";
 
-class Table extends Component {
+class Table extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-
-  renderHeadingRow = (_cell, cellIndex) => {
-    const headings = this.props;
-
-    return (
-      <table>
-        <Cell />
-      </table>
-    );
-  };
-
-
-
-  
   render() {
-    const headings = this.props.data;
-
-    console.log("headings", headings);
-
-    const theadMarkup = (
-      <tr key="heading"></tr>
-    );
-
-    for (const item in this.props.data) {
-      if (this.props.data.hasOwnProperty(item)) {
-        console.log("item", item);
-        console.log("this.props.data[item]", this.props.data[item]);
-
-        // const allElements = this.props.data[item];
-        // console.log("element", allElements);
-      }
-    }
     return (
       <table>
-        <thead>{theadMarkup}</thead>
+        <thead></thead>
+        <tbody>
+          <Cell content={this.props.data} />
+        </tbody>
       </table>
     );
+  }
+
+  Cells() {
+    return <Cell />;
   }
 }
 
